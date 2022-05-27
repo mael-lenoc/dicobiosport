@@ -1,0 +1,206 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap');
+
+
+/* Color Scheme
+.first-color: #233142
+.second-color: #455d7a;
+.third-color #f95959;
+.fourth-color: #e3e3e3;
+*/
+
+
+/***
+General Template 
+***/
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #233142;
+    font-size: 2.5em;
+    line-height: normal;
+}
+
+h3 {
+    padding-top: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #455d7a;
+}
+
+label {
+    color: #555;
+}
+
+li {
+    padding-bottom: 1em;
+}
+
+.content {
+    max-width: 1000px;
+    width: calc(100vw - 240px);
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.colonne {
+    background-color: #e3e3e3;
+    width: 350px;
+    min-width: 350px;
+    vertical-align: top;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.maincontent {
+    max-width: 650px;
+    width: 65vw;
+    vertical-align: top;
+    display: inline-block;
+    height: fit-content;
+    line-height: 1.5em;
+    flex-direction: column;
+}
+
+.ligne {
+    border-top: solid 2px #233142;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    visibility: hidden 
+}
+
+/***
+Report bio 1 personne 
+***/
+
+/* Nom-Prenom Fix */
+
+.colonne h2.nomprenom{
+    text-align: right;
+    line-height: 1em;
+    color: #455d7a;
+    margin-left: 12px;
+    margin-right: -12px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.maincontent .nomprenom {
+    text-align: left;
+    line-height: 1em;
+    margin-left: -12px;
+    margin-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 310px;
+}
+
+.nomprenom .nom {
+    margin-top: -1.5em;
+    font-weight: 700;
+}
+
+.nomprenom .prenom {
+    font-weight: 500;
+}
+
+/* Photo Fix */
+
+.photo-inner {
+    position: relative;
+    height: fit-content;
+}
+
+.photo-default {
+    width: 80%;
+}
+
+.colonne .photo-bio img{
+    width: 245px;
+    border: solid 30px #fff;
+    margin-left: 150px;
+}
+
+.colonne .photo-inner>div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bio-text .photo-inner {
+    width: 245px;
+    height: 100%;
+    float: left;
+}
+
+.bio-text .hidden img{
+    width: 245px;
+    border: solid 30px #fff;
+}
+
+.bio-text .hidden .photo-inner {
+    margin-left: -130px;
+}
+
+/* Colonne détail bios */
+
+.colonne .attr{
+    padding: 40px;
+}
+
+/* Main bio text */
+
+.bio-text {
+    padding: 0 50px 20px;
+    max-width: 850px;
+    text-align: justify;
+}
+
+.bio-text p:first-of-type {
+    padding-top: 175px;
+}
+
+.biblio {
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    max-width: 850px;
+    text-align: justify;
+    text-indent: -20px;
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+.auteur {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 60%;
+    text-align: center;
+    color: #555;
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
